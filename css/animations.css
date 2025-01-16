@@ -1,0 +1,120 @@
+
+@keyframes rise_li {
+    0% {
+        /* opacity: 0; */
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  
+
+}
+
+
+
+
+@keyframes rise {
+    0% {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  
+
+}
+
+
+
+
+@keyframes cascade {
+    0% {
+        opacity: 0;
+        transform: translateZ(60px);
+        transform-style: preserve-3d;
+        cursor:default;
+        
+      
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+        transform-style: preserve-3d;
+        cursor:pointer;
+      
+    }
+  
+
+}
+
+@keyframes bounce {
+    from{
+        opacity:0;
+        transform: translateY(0px);
+    }
+
+    50%{
+        opacity:1;
+        transform: translateY(-30px);
+    }
+
+    75%{
+        opacity:1;
+        transform: translateY(0px);
+    }
+
+    90%{
+        opacity:1;
+        transform: translateY(-30px);
+    }
+
+    to{
+        opacity:1;
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+@keyframes bounce_lite {
+    from{
+        transform: translateX(0px);
+        background: white;
+    }
+
+
+
+    33.3%{
+        transform: translateX(4px);
+        background: var(--accent);
+        color:white;
+    }
+
+
+    33.3%{
+        transform: translateX(-4px);
+        background: var(--accent);
+        color:white;
+    }
+
+    to{
+        transform: translateX(0px);
+        background: white;
+    }
+}
+
+
+.logo_bounce{
+    animation: bounce_lite .8s infinite ease-in-out;
+}
+
+
+.active{
+    animation: rise .5s ease-in-out;
+    display:block;
+}

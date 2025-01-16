@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/b782cf5553.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div class="header">
+        <div class="logo_cont">
+            <a href="index.html">LOGO</a>
+        </div>
+
+        <div class="mid_cont">
+            <ul>
+                <a href="girls_hall.html"><li>girls hall <span></span></li></a>
+                <a href="male_hall.html"><li>boys hall <span></span></li></a>
+                <a href="account.html"><li>offices <span></span></li></a>
+                <a href="account.html"><li>departments <span></span></li></a>
+                <a href="account.html"><li>buth <span></span></li></a>
+                <a href="account.html"><li>others <span></span></li></a>
+                 <a href="main.html"><li>map <span></span></li></a>
+               
+           
+                <li></li>
+            </ul>
+        </div>
+
+        <div class="last_cont">
+            <ul>
+             
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="cont searches">
+       <input type="text" class="search_bar" placeholder="search area in babcock" id="destination" autocomplete="off">
+     <form id="form"><input type="text" hidden class="search_bar" placeholder="search area in babcock" id="coords" name="coords"></form>  
+       <div class="locations">
+        <ul>
+            <!-- <li><i class="fa-solid fa-location-dot"></i> havillah gold</li>
+            <li><i class="fa-solid fa-location-dot"></i> havillah gold</li>
+            <li><i class="fa-solid fa-location-dot"></i> havillah gld</li>
+            <li><i class="fa-solid fa-location-dot"></i> havillah gld</li>
+            <li><i class="fa-solid fa-location-dot"></i> havillah gld</li>
+            <li><i class="fa-solid fa-location-dot"></i> havillah gld</li>
+            <li><i class="fa-solid fa-location-dot"></i> havillah gold</li> -->
+        </ul>
+       </div>
+    </div>
+
+    <div class="container">
+        <div class="cent">
+            <div id="map"></div>
+
+         
+        </div>
+
+        <!-- <div class="geo">
+            <div class="show_geo">
+
+            </div>
+    
+            <div class="get_geo">
+                
+            </div>
+
+        </div> -->
+       
+    </div>
+    
+</body>
+<script src="./map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4M8GSEcTRlp0sKmIFrn49Pd8r13mpFGA&libraries=places&callback=initMap" async defer></script>
+</html>

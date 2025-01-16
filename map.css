@@ -1,0 +1,157 @@
+#map {
+    height: 100%;
+    width: 100%;
+  }
+
+
+  .container{
+    width:100%;
+    height:750px;
+    padding-top:1px;
+  }
+
+  .cent{
+    width:1200px;
+    height:600px;
+    margin:0 auto;
+    margin-top:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 26px;
+  }
+
+
+.geo{
+    width: 1000px;
+    display:flex;
+    justify-content: space-around;
+}
+
+
+  .show_geo, .get_geo{
+    width:400px;
+    height:60px;
+    margin:40px 50px;
+    border:2px solid black;
+  }
+
+  input{
+    height:60px;
+    margin:40px 50px;
+  }
+
+
+  .header{
+    background: #000;
+  }
+
+
+  .searches{
+    width:100%;
+    height:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:80px;
+    position:relative;
+  }
+
+  .locations{
+    position:absolute;
+    bottom:-152px;
+    width: 750px;
+    height:180px;
+    background: var(--accent);
+    padding-top:1px;
+    z-index:999;
+    display:none;
+    /* opacity:0; */
+
+  }
+
+
+  .locations ul{
+    width: 750px;
+    height:180px;
+    padding-top:1px;
+    overflow-y: scroll;
+  }
+
+  
+  .locations ul li{
+    /* width:100%; */
+    display:flex;
+    color:white;
+    font-weight:600;
+    align-items: center;
+    text-transform: capitalize;
+    margin:12px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: .3s ease;
+    display:none;
+    animation: subtle_rise .4s ease-in-out;
+  }
+
+
+  @keyframes subtle_rise {
+    from{
+      opacity: 0;
+      transform: translateY(2px);
+    }
+
+    to{
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  .locations ul li:hover{
+    background: white;
+    color:var(--accent_hover);
+    transition: .3s ease;
+  }
+
+  .locations ul li i{
+    font-size:16px;
+    margin:0 12px;
+  }
+
+  .search_bar{
+    width:800px;
+    height:40px;
+    border-radius: 24px;
+    border: 2px solid var(--accent);
+    padding:14px;
+  }
+
+
+#map{
+  border-radius: 24px;
+  border: 3px solid var(--accent_hover);
+  /* box-shadow: var(--shadow); */
+}
+  
+
+
+  .search_bar::placeholder{
+    color:black;
+  }
+
+  button{
+    /* opacity:0; */
+  }
+
+
+.locations ul::-webkit-scrollbar {
+    width: 6px;
+} 
+.locations ul::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px var(--accent_hover); 
+    /* width:6px; */
+} 
+.locations ul::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgb(255, 255, 255); 
+    width:6px;
+}

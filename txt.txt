@@ -1,0 +1,8 @@
+  {
+      name:"",
+      image:"",
+      coordinates:{
+          latitude:"",
+          longitude:""
+      },
+  },
