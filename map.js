@@ -9,6 +9,79 @@ const buildings=[
   },
 
   {
+    name:"BBS",
+    image:"",
+    coordinates:{
+        latitude:"6.89072291334421",
+        longitude:"3.7240046288794098"
+    },
+},
+
+
+{
+    name:"SAT",
+    image:"",
+    coordinates:{
+        latitude:"6.888844522542642",
+        longitude:"3.7229143071147894"
+    },
+},
+
+{
+    name:"chemistry lab",
+    image:"",
+    coordinates:{
+        latitude:"6.888053100437225",
+        longitude:"3.72295837214855"
+    },
+},
+
+{
+    name:"engineering sch",
+    image:"",
+    coordinates:{
+        latitude:"6.8895027",
+        longitude:"3.7240833"
+    },
+},
+
+{
+    name:"EAH",
+    image:"",
+    coordinates:{
+        latitude:"6.890244297687223",
+        longitude:"3.7207006961518774"
+    },
+},
+
+{
+    name:"new horizon",
+    image:"",
+    coordinates:{
+        latitude:"6.890481261704027",
+        longitude:"3.723260912472078"
+    },
+},
+
+{
+    name:"600 seaters",
+    image:"",
+    coordinates:{
+        latitude:"6.89143472387291",
+        longitude:"3.7168539244662586"
+    },
+},
+
+{
+    name:"bucodel",
+    image:"",
+    coordinates:{
+        latitude:"6.893230135980139",
+        longitude:"3.7105850392087416"
+    },
+},
+
+  {
       name:'Queen Esther',
       image:"",
       coordinates:{
@@ -198,6 +271,64 @@ const buildings=[
   },
 },
 
+{
+  name:"busary",
+  image:"",
+  coordinates:{
+      latitude:"6.890125898004287",
+      longitude:"3.7229927134898433"
+  },
+},
+
+
+{
+  name:"entrepreneurship",
+  image:"",
+  coordinates:{
+      latitude:"6.8891578",
+      longitude:"3.7263045"
+  },
+},
+
+
+{
+  name:"farm house",
+  image:"",
+  coordinates:{
+      latitude:"6.8902486",
+      longitude:"3.7259833"
+  },
+},
+
+
+{
+  name:"bumu",
+  image:"",
+  coordinates:{
+      latitude:"6.892521",
+      longitude:"3.720413"
+  },
+},
+
+
+{
+  name:"registry",
+  image:"",
+  coordinates:{
+      latitude:"6.889482832565852",
+      longitude:"3.7223997255545282"
+  },
+},
+
+{
+  name:"alumi building",
+  image:"",
+  coordinates:{
+      latitude:"6.892664413865216",
+      longitude:"3.7205273643296155"
+  },
+},
+
 ]
 
 
@@ -247,7 +378,7 @@ function initMap() {
     // Coordinates for Babcock University
     const babcockUniversity = { lat: 6.893956, lng: 3.718715 };
     
-    const mockLocation = { lat:6.892130879097252, lng:3.7238502502441406 }; 
+    const mockLocation = { lat:6.892839277599381, lng:3.7238590597861876 }; 
   
     // Define a bounding box around Babcock University
     const bounds = {
@@ -271,21 +402,7 @@ function initMap() {
     // Create the map
     const map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
-    map.addListener('mousemove', (event) => {
-        const lat = event.latLng.lat(); // Get latitude
-        const lng = event.latLng.lng(); // Get longitude
-    
-        // Display the coordinates (you can show them on the screen or log them)
-        document.querySelector(".show_geo").textContent=(`Latitude: ${lat}, Longitude: ${lng}`);
-      });
 
-      map.addListener('click', (event) => {
-        const lat = event.latLng.lat(); // Get latitude
-        const lng = event.latLng.lng(); // Get longitude
-    
-        // Display the coordinates (you can show them on the screen or log them)
-        document.querySelector(".get_geo").textContent=(`Latitude: ${lat}, Longitude: ${lng}`);
-      });
 
     
   

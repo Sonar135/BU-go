@@ -204,3 +204,373 @@ export const male_halls=[
         },
     },
 ]
+
+
+
+
+export const offices=[
+    {
+        name:"busary",
+        image:"",
+        coordinates:{
+            latitude:"6.890125898004287",
+            longitude:"3.7229927134898433"
+        },
+    },
+
+
+    {
+        name:"entrepreneurship",
+        image:"",
+        coordinates:{
+            latitude:"6.8891578",
+            longitude:"3.7263045"
+        },
+    },
+
+
+    {
+        name:"farm house",
+        image:"",
+        coordinates:{
+            latitude:"6.8902486",
+            longitude:"3.7259833"
+        },
+    },
+
+
+    {
+        name:"bumu",
+        image:"",
+        coordinates:{
+            latitude:"6.892521",
+            longitude:"3.720413"
+        },
+    },
+
+
+    {
+        name:"registry",
+        image:"",
+        coordinates:{
+            latitude:"6.889482832565852",
+            longitude:"3.7223997255545282"
+        },
+    },
+
+    {
+        name:"alumi building",
+        image:"",
+        coordinates:{
+            latitude:"6.892664413865216",
+            longitude:"3.7205273643296155"
+        },
+    },
+
+
+    {
+        name:"security office",
+        image:"",
+        coordinates:{
+           latitude:"6.890859461094672",
+           longitude:"3.7225472078025525"
+        },
+    },
+]
+
+
+
+export const departments=[
+    {
+        name:"BBS",
+        image:"",
+        coordinates:{
+            latitude:"6.89072291334421",
+            longitude:"3.7240046288794098"
+        },
+    },
+
+
+    {
+        name:"SAT",
+        image:"",
+        coordinates:{
+            latitude:"6.888844522542642",
+            longitude:"3.7229143071147894"
+        },
+    },
+
+    {
+        name:"chemistry lab",
+        image:"",
+        coordinates:{
+            latitude:"6.888053100437225",
+            longitude:"3.72295837214855"
+        },
+    },
+
+    {
+        name:"engineering sch",
+        image:"",
+        coordinates:{
+            latitude:"6.8895027",
+            longitude:"3.7240833"
+        },
+    },
+
+    {
+        name:"EAH",
+        image:"",
+        coordinates:{
+            latitude:"6.890244297687223",
+            longitude:"3.7207006961518774"
+        },
+    },
+
+    {
+        name:"new horizon",
+        image:"",
+        coordinates:{
+            latitude:"6.890481261704027",
+            longitude:"3.723260912472078"
+        },
+    },
+
+    {
+        name:"600 seaters",
+        image:"",
+        coordinates:{
+            latitude:"6.89143472387291",
+            longitude:"3.7168539244662586"
+        },
+    },
+
+    {
+        name:"bucodel",
+        image:"",
+        coordinates:{
+            latitude:"6.8917534",
+            longitude:"3.7231606"
+        },
+    },
+
+ 
+
+]
+
+
+export const buth=[
+
+    {
+        name:"A&E",
+        image:"",
+        coordinates:{
+            latitude:"6.8918676",
+            longitude:"3.7185995"
+        },
+    },
+
+    {
+        name:"lab test",
+        image:"",
+        coordinates:{
+            latitude:"6.891351",
+            longitude:"3.718248"
+        },
+    },
+
+    {
+        name:"cardiac center",
+        image:"",
+        coordinates:{
+            latitude:"6.8919768",
+            longitude:"3.7185375"
+        },
+    },
+
+    {
+        name:"outpatient clinic",
+        image:"",
+        coordinates:{
+            latitude:"6.892253",
+            longitude:"3.718209"
+        },
+    },
+
+
+    {
+        name:"student clinic",
+        image:"",
+        coordinates:{
+           latitude:"6.890859461094672",
+            longitude:"3.7225472078025525"
+        },
+    },
+
+]
+
+
+
+export const others=[
+    {
+        name:"amphitheatre",
+        image:"",
+        coordinates:{
+            latitude:"6.890859461094672",
+            longitude:"3.7225472078025525"
+        },
+    },
+
+
+    {
+        name:"main gate",
+        image:"",
+        coordinates:{
+            latitude:"",
+            longitude:""
+        },
+    },
+
+
+    {
+        name:"basketball court",
+        image:"",
+        coordinates:{
+            latitude:"6.891677418683772",
+            longitude:"3.720457662879589"
+        },
+    },
+
+
+    {
+        name:"superstore",
+        image:"",
+        coordinates:{
+            latitude:"6.891164099421291",
+            longitude:"3.720359600755251"
+        },
+    },
+
+
+    {
+        name:"jumia hub",
+        image:"",
+        coordinates:{
+            latitude:"6.891259240532254",
+            longitude:"3.7208967137517277"
+        },
+    },
+
+
+    {
+        name:"banking area",
+        image:"",
+        coordinates:{
+            latitude:"6.890894160905001",
+            longitude:"3.7204693632964685"
+        },
+    },
+
+    {
+        name:"university library",
+        image:"",
+        coordinates:{
+            latitude:"6.892345727597431",
+            longitude:"3.7222057678081777"
+        },
+    },
+
+    {
+        name:"DHL",
+        image:"",
+        coordinates:{
+            latitude:"6.8891052",
+            longitude:"3.7209437"
+        },
+    },
+
+    {
+        name:"BGH / guest house",
+        image:"",
+        coordinates:{
+            latitude:"6.890525437582436",
+            longitude:"3.7201008562709257"
+        },
+    },
+
+    {
+        name:"stadium",
+        image:"",
+        coordinates:{
+            latitude:"6.895073312996593",
+            longitude:"3.728043877820931"
+        },
+    },
+
+    {
+        name:"MSQ gate",
+        image:"",
+        coordinates:{
+            latitude:"6.8957360",
+            longitude:"3.7239401"
+        },
+    },
+
+    {
+        name:"andrews car park",
+        image:"",
+        coordinates:{
+            latitude:"6.8892871041690915",
+            longitude:"3.7208637665726645"
+        },
+    },
+
+    {
+        name:"cafeteria",
+        image:"",
+        coordinates:{
+            latitude:"6.89278985544793",
+            longitude:"3.7237406440420293"
+        },
+    },
+
+    {
+        name:"book shop",
+        image:"",
+        coordinates:{
+            latitude:"",
+            longitude:""
+        },
+    },
+
+    {
+        name:"pioneer chapel",
+        image:"",
+        coordinates:{
+            latitude:"6.889791275931557",
+            longitude:"3.719890517431272"
+        },
+    },
+
+    {
+        name:"youth chapel",
+        image:"",
+        coordinates:{
+            latitude:"6.8898382",
+            longitude:"3.7194048"
+        },
+    },
+
+    {
+        name:"old school building",
+        image:"",
+        coordinates:{
+            latitude:"",
+            longitude:""
+        },
+    },
+
+
+]
+
+
