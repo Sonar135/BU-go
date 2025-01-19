@@ -20,6 +20,7 @@
     outline:none;
     text-decoration: none;
     font-weight:400;
+    scroll-behavior: smooth;
 }
 
 
@@ -33,8 +34,10 @@
     top:0;
     left:0;
     z-index:10000;
-    background: white;
 }
+
+
+
 
 .logo_cont{
     height:100%;
@@ -138,6 +141,32 @@
     color:white;
 }
 
+
+.header_bordered{
+    background: #00000089;
+    animation:flow .3s ease;
+}
+
+
+@keyframes flow {
+    from{
+        background: transparent;
+    }
+
+    to{
+        background: #00000089;
+    }
+}
+
+@keyframes flow_reverse {
+    from{
+        background: #00000089;
+    }
+
+    to{
+        background: transparent;
+    }
+}
 
 .overlay{
     position:absolute;

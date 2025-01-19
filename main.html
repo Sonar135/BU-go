@@ -3,7 +3,6 @@
 <head>
     <script src="https://kit.fontawesome.com/b782cf5553.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="map.css">
     <link rel="stylesheet" href="css/animations.css">
     <meta charset="UTF-8">
@@ -11,6 +10,15 @@
     <title>Document</title>
 </head>
 <body>
+
+ 
+    <div class="loading">
+        <div class="loader">
+
+        </div>
+
+        <h1>Routing...</h1>
+    </div>
    
     <div class="header">
         <div class="logo_cont">
@@ -45,18 +53,20 @@
      <form id="form"><input type="text" hidden class="search_bar" placeholder="search area in babcock" id="coords" name="coords"></form>  
        <div class="locations">
         <ul>
-            <!-- <li><i class="fa-solid fa-location-dot"></i> havillah gold</li>
-            <li><i class="fa-solid fa-location-dot"></i> havillah gold</li>
-            <li><i class="fa-solid fa-location-dot"></i> havillah gld</li>
-            <li><i class="fa-solid fa-location-dot"></i> havillah gld</li>
-            <li><i class="fa-solid fa-location-dot"></i> havillah gld</li>
-            <li><i class="fa-solid fa-location-dot"></i> havillah gld</li>
-            <li><i class="fa-solid fa-location-dot"></i> havillah gold</li> -->
+         
         </ul>
        </div>
     </div>
 
+    <div class="area"><i class="fa-solid fa-location-dot"></i><h1></h1></div>
+
     <div class="container">
+        <div class="cus_buttons">
+            <button id="show_location" class="vibe"><i class="fa-solid fa-crosshairs"></i></button>
+            <button id="satellite" class="vibe"><i class="fa-solid fa-satellite"></i></button>
+            <button id="plus" class="vibe"><i class="fa-solid fa-plus"></i></button>
+            <button id="minus" class="vibe"><i class="fa-solid fa-minus"></i></i></button>
+        </div>
         <div class="cent">
             <div id="map"></div>
 

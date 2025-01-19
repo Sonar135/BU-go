@@ -10,7 +10,7 @@ departments.forEach((building, i)=>{
                          <div class="build_cont">
                     <div class="pill">
                         <img src="images/2022-11-15.jpg" alt="">
-                        href=""><div class="overlay">
+                       <div class="overlay">
                             <h1>${building.name}</h1>
                         </div>
                     </div>
@@ -27,6 +27,10 @@ departments.forEach((building, i)=>{
 
     
     buttons.forEach((button, i)=>{
+        setTimeout(()=>{
+            button.classList.add("bounce")
+        }, i*100)
+        
         button.addEventListener("mouseenter", ()=>{
             icons[i].classList.add("logo_bounce")
         })

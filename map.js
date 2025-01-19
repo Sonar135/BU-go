@@ -8,6 +8,216 @@ const buildings=[
       },
   },
 
+
+
+  {
+    name:"Accident and emergency",
+    image:"",
+    coordinates:{
+        latitude:"6.8918676",
+        longitude:"3.7185995"
+    },
+},
+
+{
+    name:"lab test",
+    image:"",
+    coordinates:{
+        latitude:"6.891351",
+        longitude:"3.718248"
+    },
+},
+
+{
+    name:"cardiac center",
+    image:"",
+    coordinates:{
+        latitude:"6.8919768",
+        longitude:"3.7185375"
+    },
+},
+
+
+{
+  name:"amphitheatre",
+  image:"",
+  coordinates:{
+      latitude:"6.890859461094672",
+      longitude:"3.7225472078025525"
+  },
+},
+
+
+{
+  name:"main gate",
+  image:"",
+  coordinates:{
+      latitude:"6.8888872",
+      longitude:"3.7197522"
+  },
+},
+
+
+{
+  name:"basketball court",
+  image:"",
+  coordinates:{
+      latitude:"6.891677418683772",
+      longitude:"3.720457662879589"
+  },
+},
+
+
+{
+  name:"superstore",
+  image:"",
+  coordinates:{
+      latitude:"6.891164099421291",
+      longitude:"3.720359600755251"
+  },
+},
+
+
+{
+  name:"jumia hub",
+  image:"",
+  coordinates:{
+      latitude:"6.891259240532254",
+      longitude:"3.7208967137517277"
+  },
+},
+
+
+{
+  name:"banking area",
+  image:"",
+  coordinates:{
+      latitude:"6.890894160905001",
+      longitude:"3.7204693632964685"
+  },
+},
+
+{
+  name:"university library",
+  image:"",
+  coordinates:{
+      latitude:"6.892345727597431",
+      longitude:"3.7222057678081777"
+  },
+},
+
+{
+  name:"DHL",
+  image:"",
+  coordinates:{
+      latitude:"6.8891052",
+      longitude:"3.7209437"
+  },
+},
+
+{
+  name:"BGH / guest house",
+  image:"",
+  coordinates:{
+      latitude:"6.890525437582436",
+      longitude:"3.7201008562709257"
+  },
+},
+
+{
+  name:"stadium",
+  image:"",
+  coordinates:{
+      latitude:"6.895073312996593",
+      longitude:"3.728043877820931"
+  },
+},
+
+{
+  name:"MSQ gate",
+  image:"",
+  coordinates:{
+      latitude:"6.8957360",
+      longitude:"3.7239401"
+  },
+},
+
+{
+  name:"andrews car park",
+  image:"",
+  coordinates:{
+      latitude:"6.8892871041690915",
+      longitude:"3.7208637665726645"
+  },
+},
+
+{
+  name:"cafeteria",
+  image:"",
+  coordinates:{
+      latitude:"6.89278985544793",
+      longitude:"3.7237406440420293"
+  },
+},
+
+{
+  name:"SAT bookshop",
+  image:"",
+  coordinates:{
+      latitude:"6.8888173",
+      longitude:"3.7224635"
+  },
+},
+
+{
+  name:"pioneer chapel",
+  image:"",
+  coordinates:{
+      latitude:"6.889791275931557",
+      longitude:"3.719890517431272"
+  },
+},
+
+{
+  name:"youth chapel",
+  image:"",
+  coordinates:{
+      latitude:"6.8898382",
+      longitude:"3.7194048"
+  },
+},
+
+
+{
+    name:"outpatient clinic",
+    image:"",
+    coordinates:{
+        latitude:"6.892253",
+        longitude:"3.718209"
+    },
+},
+
+
+{
+    name:"student clinic",
+    image:"",
+    coordinates:{
+       latitude:"6.890859461094672",
+        longitude:"3.7225472078025525"
+    },
+},
+
+
+
+  {
+    name:"security office",
+    image:"",
+    coordinates:{
+       latitude:"6.890859461094672",
+       longitude:"3.7225472078025525"
+    },
+},
+
   {
     name:"BBS",
     image:"",
@@ -336,6 +546,9 @@ const buildings=[
 
 
 
+
+
+
 buildings.forEach(building=>{
   document.querySelector(".locations ul").innerHTML+=`
       <li><i class="fa-solid fa-location-dot"></i>${building.name}</li>
@@ -345,7 +558,7 @@ buildings.forEach(building=>{
 
 let form=document.querySelector("#form")
 
-
+let calc
 
 const urlParams = new URLSearchParams(window.location.search);
 
@@ -353,9 +566,17 @@ const urlParams = new URLSearchParams(window.location.search);
 const branch_lat = urlParams.get('v');
 const branch_long = urlParams.get('q');
 
+let lastDestination=null;
 
 
+let vibe=document.querySelectorAll(".vibe");
 
+vibe.forEach((vib, i)=>{
+  setTimeout(()=>{
+    vib.classList.add("vibe_rise")
+  }, i*100)
+  
+})
 
 
 
@@ -396,15 +617,23 @@ function initMap() {
       restriction: {
         latLngBounds: bounds, // Restrict map to the bounding box
         strictBounds: false   // Allow some panning outside bounds before snapping back
-      }
+      },
+    zoomControl: false,         // Disable zoom controls
+    mapTypeControl: false,      // Disable map type (satellite/terrain) controls
+    streetViewControl: false,   // Disable Street View controls
+    fullscreenControl: false,
+    disableDefaultUI: true,
+    gestureHandling: "greedy" ,
     };
+
+
   
     // Create the map
     const map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
 
 
-    
+    map.setOptions({ scrollwheel: false });
   
     // Add a marker for Babcock University
     new google.maps.Marker({
@@ -433,7 +662,40 @@ function initMap() {
 
     
 
-   
+   document.querySelector("#satellite").addEventListener('click', () => {
+
+
+    if(document.querySelector("#satellite").classList.contains("selected")){
+      document.querySelector("#satellite").classList.remove("selected")
+      map.setMapTypeId('roadmap');
+    }
+
+    else{
+      document.querySelector("#satellite").classList.add("selected")
+
+      map.setMapTypeId('hybrid');
+    }
+
+
+ 
+  });
+
+  document.querySelector("#plus").addEventListener('click', () => {
+    map.setZoom(map.getZoom() + 1); // Zoom in
+  });
+
+  document.querySelector("#minus").addEventListener('click', () => {
+    map.setZoom(map.getZoom() - 1); // Zoom in
+  });
+
+
+
+
+  document.querySelector("#show_location").addEventListener('click', () => {
+    map.panTo(mockLocation); // Pan to the mock location
+    // map.setZoom(16); // Optionally set a fixed zoom level
+  });
+
 
     input.addEventListener("input", () => {
       if (input.value.trim() !== "") {
@@ -442,7 +704,8 @@ function initMap() {
         items.forEach((item, i) => {
           if (item.textContent.toLowerCase().includes(input.value.trim().toLowerCase())) {
 
-         
+  
+              
               items[i].style.display = "flex"; 
            
             
@@ -486,6 +749,11 @@ function initMap() {
 
     form.addEventListener("submit", (event) => {
       event.preventDefault(); // Prevent default form submission
+
+
+
+
+      
      
         const form_data= new FormData(form)
     
@@ -495,8 +763,14 @@ function initMap() {
         if (coordinateMatch) {
           const lat = parseFloat(coordinateMatch[1]);
           const lng = parseFloat(coordinateMatch[3]);
-          calculateRoute({ lat, lng });
-          // console.log({ lat, lng });
+
+          calculateRoute({ lat, lng })
+         
+
+    
+          
+        
+
         }
     
     });
@@ -505,7 +779,13 @@ function initMap() {
 
 
 
+    
+
+
+
     function calculateRoute(destination) {
+      lastDestination = destination;
+      document.querySelector(".loading").classList.add("show")
       directionsService.route(
         {
           origin: mockLocation,
@@ -513,6 +793,34 @@ function initMap() {
           travelMode: google.maps.TravelMode.WALKING // Options: DRIVING, BICYCLING, TRANSIT
         },
         (response, status) => {
+          document.querySelector(".loading").classList.remove("show")
+
+          document.querySelector(".area").classList.remove("area_active")
+          void document.querySelector(".area").offsetWidth;
+          document.querySelector(".area").classList.add("area_active")
+
+        
+
+          let coords=document.querySelector("#coords").value
+          let coord_match= coords.match(/^(-?\d+(\.\d+)?),\s*(-?\d+(\.\d+)?)$/);
+
+          let lat = parseFloat(coord_match[1]);
+          let lng = parseFloat(coord_match[3]);
+
+          
+          
+
+          buildings.forEach(building=>{
+            if(building.coordinates.latitude==lat && building.coordinates.longitude==lng){
+              document.querySelector(".area h1").textContent=building.name
+            }
+          })
+
+          input.value=""
+
+          window.scrollBy({
+            top:100
+          })
           if (status === google.maps.DirectionsStatus.OK) {
             directionsRenderer.setDirections(response);
           } else {
@@ -530,14 +838,14 @@ function initMap() {
 
 
 
+
   navigator.geolocation.getCurrentPosition((position) => {
     const userLocation = {
       lat: position.coords.latitude,
       lng: position.coords.longitude
     };
   
-    const destination = { lat: 37.7749, lng: -122.4194 }; // Replace with your destination
-    getRoute(map, userLocation, destination);
+
   });
   
 

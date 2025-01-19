@@ -1,8 +1,8 @@
-import { buth } from "./datasets.js";
+import { others } from "./datasets.js";
 
 
 
-buth.forEach((building, i)=>{
+others.forEach((building, i)=>{
     console.log(building)
 
     document.querySelector(".hall").innerHTML+=`
@@ -22,14 +22,17 @@ buth.forEach((building, i)=>{
 
     `
 
+
     let buttons=document.querySelectorAll(".build_cont")
     let icons=document.querySelectorAll(".ico")
 
     
     buttons.forEach((button, i)=>{
+
         setTimeout(()=>{
             button.classList.add("bounce")
         }, i*100)
+
         button.addEventListener("mouseenter", ()=>{
             icons[i].classList.add("logo_bounce")
         })

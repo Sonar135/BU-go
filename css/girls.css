@@ -85,6 +85,7 @@
     margin:20px 40px;
     border-radius: 18px;
     box-shadow: var(--shadow);
+    display:none;
 }
 
 .build_cont h4{
@@ -120,6 +121,8 @@
  
 
 }
+
+
 
 .ico{
     border-radius: 50px;

@@ -71,7 +71,7 @@ export const buildings=[
       name:"Sapphire",
       image:"",
       coordinates:{
-          latitude:"6.891432",
+          latitude:"6.8914392",
           longitude:"3.7263655"
       },
   },
@@ -426,8 +426,8 @@ export const others=[
         name:"main gate",
         image:"",
         coordinates:{
-            latitude:"",
-            longitude:""
+            latitude:"6.8888872",
+            longitude:"3.7197522"
         },
     },
 
@@ -535,11 +535,11 @@ export const others=[
     },
 
     {
-        name:"book shop",
+        name:"SAT bookshop",
         image:"",
         coordinates:{
-            latitude:"",
-            longitude:""
+            latitude:"6.8888173",
+            longitude:"3.7224635"
         },
     },
 
@@ -561,14 +561,7 @@ export const others=[
         },
     },
 
-    {
-        name:"old school building",
-        image:"",
-        coordinates:{
-            latitude:"",
-            longitude:""
-        },
-    },
+
 
 
 ]
