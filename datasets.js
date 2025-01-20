@@ -436,8 +436,8 @@ export const others=[
         name:"basketball court",
         image:"",
         coordinates:{
-            latitude:"6.891677418683772",
-            longitude:"3.720457662879589"
+            latitude:"6.8939960750281815",
+            longitude:"3.7284691330356745"
         },
     },
 
@@ -502,11 +502,11 @@ export const others=[
         name:"stadium",
         image:"images/stadium.jpg",
         coordinates:{
-            latitude:"6.895073312996593",
-            longitude:"3.728043877820931"
+            latitude:"6.894978114199844",
+            longitude:"3.727161356692398"
         },
     },
-
+    
     {
         name:"MSQ gate",
         image:"",

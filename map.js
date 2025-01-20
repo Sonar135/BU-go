@@ -62,8 +62,8 @@ const buildings=[
   name:"basketball court",
   image:"",
   coordinates:{
-      latitude:"6.891677418683772",
-      longitude:"3.720457662879589"
+       latitude:"6.8939960750281815",
+       longitude:"3.7284691330356745"
   },
 },
 
@@ -128,8 +128,8 @@ const buildings=[
   name:"stadium",
   image:"",
   coordinates:{
-      latitude:"6.895073312996593",
-      longitude:"3.728043877820931"
+       latitude:"6.894978114199844",
+       longitude:"3.727161356692398"
   },
 },
 
@@ -603,12 +603,13 @@ function initMap() {
   
     // Define a bounding box around Babcock University
     const bounds = {
-      north: 6.89518, 
+      north: 6.895978114199844, 
       south: 6.882, 
       east: 3.730, 
       west: 3.7158957026299593 
     };
-    
+      // latitude:"",
+      //  longitude:"3.727161356692398"
     // Map options
     const mapOptions = {
         
@@ -790,7 +791,8 @@ function initMap() {
         {
           origin: mockLocation,
           destination: destination,
-          travelMode: google.maps.TravelMode.WALKING // Options: DRIVING, BICYCLING, TRANSIT
+          travelMode: google.maps.TravelMode.WALKING,
+          provideRouteAlternatives: true 
         },
         (response, status) => {
           document.querySelector(".loading").classList.remove("show")
@@ -822,6 +824,7 @@ function initMap() {
             top:100
           })
           if (status === google.maps.DirectionsStatus.OK) {
+            
             directionsRenderer.setDirections(response);
           } else {
             alert('Directions request failed due to: ' + status);

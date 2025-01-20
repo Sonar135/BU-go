@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://kit.fontawesome.com/b782cf5553.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b782cf5553.js" crossorigin="anonymous"></script>  
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/girls.css">
-    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/auth.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+    <div class="message" id="message">
+       
+    </div>
+
+
     <div class="header">
         <div class="logo_cont">
             <a href="index.html">BU-GO</a>
@@ -36,42 +40,25 @@
         </div>
     </div>
 
-
     <div class="hero">
-        <div class="cont heading">
-            <div class="overlay">
-                <div class="cent">
-                    <h1>MAIN OFFICES</h1>
-                  </div>
-            </div>
+        <div class="overlay">
+            <div class="container form_cont" 
          
+                <form id="login_form"></form>><div class="cent" style="margin-top:100px"></div>>
+                     <h1>Login</h1>        
+                     <input type="email" placeholder="email" id="data" class="field" name="email">
+                     <input type="password" placeholder="password" id="data" class="field" name="password">
+    
+     
+                     <button disabled="disabled" id="sale_submit" class="field">Submit</button>
+                 </div></form> 
+             </div>
         </div>
-
-
-        <div class="cont list">
-            <div class="cent hall">
-             
-
-                <!-- <div class="build_cont">
-                    <div class="pill">
-                        <img src="images\2022-11-15.jpg" alt="">
-                       <a href=""><div class="overlay">
-                            <h1>Ameyo</h1>
-                        </div></a> 
-                    </div>
-
-                    <h4>Ameyo Hall</h4>
-
-                    <a href="" class="button">View In Map  <div class="ico"><i class="fa-solid fa-location-arrow"></i></div> </a>
-                </div> -->
-
-           
-
-         
-            </div>
-        </div>
+       
+ 
     </div>
 </body>
-<script type="module" src="./offices.js"></script>
-<script src="dom.js"></script>
+
+<script src="backend/auth.js"></script>
+<script src="backend/login.js"></script>
 </html>

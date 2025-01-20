@@ -65,8 +65,9 @@
     object-fit: cover;
 }
 
-.overlay{
+.pill .overlay{
     border-radius: 18px;
+    background: var(--accent_tran);
 }
 
 
