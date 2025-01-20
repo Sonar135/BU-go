@@ -286,8 +286,8 @@ const buildings=[
     name:"bucodel",
     image:"",
     coordinates:{
-        latitude:"6.893230135980139",
-        longitude:"3.7105850392087416"
+        latitude:"6.8917534",
+        longitude:"3.7231606"
     },
 },
 
@@ -513,7 +513,7 @@ const buildings=[
 
 {
   name:"bumu",
-  image:"",
+  image:"images/WhatsApp Image 2025-01-20 at 14.17.48.jpeg",
   coordinates:{
       latitude:"6.892521",
       longitude:"3.720413"

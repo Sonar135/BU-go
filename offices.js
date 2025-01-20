@@ -1,6 +1,6 @@
 import { offices } from "./datasets.js";
 
-
+let general="images/general.jpg"
 
 offices.forEach((building, i)=>{
     console.log(building)
@@ -9,7 +9,7 @@ offices.forEach((building, i)=>{
     
                          <div class="build_cont">
                     <div class="pill">
-                        <img src="images/2022-11-15.jpg" alt="">
+                        <img src="${building.image!=""?building.image:general}" alt="">
                       <div class="overlay">
                             <h1>${building.name}</h1>
                         </div>

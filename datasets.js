@@ -1,7 +1,7 @@
 export const buildings=[
     {
         name:"Ameyo",
-        image:"",
+        image:"images/2022-11-15.jpg",
         coordinates:{
             latitude:"6.895030345896131",
             longitude:"3.7250587786492497"
@@ -10,7 +10,7 @@ export const buildings=[
   
     {
         name:'Queen Esther',
-        image:"",
+        image:"images/2018-07-31.jpg",
         coordinates:{
             latitude:"6.893354076307076",
             longitude:"3.7242952884990785"
@@ -20,7 +20,7 @@ export const buildings=[
   
     {
         name:"FAD",
-        image:"",
+        image:"images/fad.jpg",
         coordinates:{
             latitude:"6.8938551248289395",
             longitude:"3.724757133980804"
@@ -39,7 +39,7 @@ export const buildings=[
   
     {
         name:"Platinum",
-        image:"",
+        image:"images/2017-06-04.jpg",
         coordinates:{
             latitude:"6.891898667331963",
             longitude:"3.7274856946267096"
@@ -59,7 +59,7 @@ export const buildings=[
   
     {
         name:"Havilah Gold",
-        image:"",
+        image:"images/havilah.jpg",
         coordinates:{
             latitude:"6.894934536100923",
             longitude:" 3.7260806996710825"
@@ -69,7 +69,7 @@ export const buildings=[
   
     {
       name:"Sapphire",
-      image:"",
+      image:"images/WhatsApp Image 2025-01-20 at 13.31.27.jpeg",
       coordinates:{
           latitude:"6.8914392",
           longitude:"3.7263655"
@@ -78,7 +78,7 @@ export const buildings=[
 
   {
     name:"White",
-    image:"",
+    image:"images/2018-11-23.jpg",
     coordinates:{
         latitude:"6.893796419854033",
         longitude:"3.726307960727902"
@@ -97,7 +97,7 @@ export const buildings=[
   
   {
     name:"Nyberg",
-    image:"",
+    image:"images/nyberg.jpg",
     coordinates:{
         latitude:"6.892612513800621",
         longitude:"3.7254955154433476"
@@ -112,7 +112,7 @@ export const buildings=[
 export const male_halls=[
     {
         name:"Samuel Akande",
-        image:"",
+        image:"images/2018-07-08.jpg",
         coordinates:{
             latitude:"6.894150538061167",
             longitude:"3.7235165322496346"
@@ -122,7 +122,7 @@ export const male_halls=[
 
     {
         name:"Neal wilson",
-        image:"",
+        image:"images/wilson.jpg",
         coordinates:{
             latitude:"6.893551542017954",
             longitude:"3.7213153832225165"
@@ -131,7 +131,7 @@ export const male_halls=[
 
     {
         name:"winslow",
-        image:"",
+        image:"images/2021-07-03.jpg",
         coordinates:{
             latitude:"6.893929261765801",
             longitude:"3.72175869916458"
@@ -140,7 +140,7 @@ export const male_halls=[
 
     {
         name:"emerald",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 13.29.00.jpeg",
         coordinates:{
             latitude:"6.8936647",
             longitude:"3.7198149"
@@ -149,7 +149,7 @@ export const male_halls=[
 
     {
         name:"gideon",
-        image:"",
+        image:"images/gideon.jpg",
         coordinates:{
             latitude:"6.894552441711924",
             longitude:"3.722331661846355"
@@ -158,7 +158,7 @@ export const male_halls=[
 
     {
         name:"bethel",
-        image:"",
+        image:"images/bethel.jpg",
         coordinates:{
             latitude:"6.894524972387451",
             longitude:"3.7231185567621097"
@@ -168,7 +168,7 @@ export const male_halls=[
 
     {
         name:"welch",
-        image:"",
+        image:"images/welch.jpg",
         coordinates:{
             latitude:"6.8913045443968",
             longitude:"3.7217132667544566"
@@ -178,7 +178,7 @@ export const male_halls=[
 
     {
         name:"nelson mandela",
-        image:"",
+        image:"images/mandela.jpg",
         coordinates:{
             latitude:"6.893605386498164",
             longitude:"3.72306544464822"
@@ -197,7 +197,7 @@ export const male_halls=[
 
     {
         name:"adeleke",
-        image:"",
+        image:"images/adeleke.jpg",
         coordinates:{
             latitude:"6.8927832362599",
             longitude:"3.7210867566787056"
@@ -221,7 +221,7 @@ export const offices=[
 
     {
         name:"entrepreneurship",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 14.00.51.jpeg",
         coordinates:{
             latitude:"6.8891578",
             longitude:"3.7263045"
@@ -231,7 +231,7 @@ export const offices=[
 
     {
         name:"farm house",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 14.41.51.jpeg",
         coordinates:{
             latitude:"6.8902486",
             longitude:"3.7259833"
@@ -241,7 +241,7 @@ export const offices=[
 
     {
         name:"bumu",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 14.17.48.jpeg",
         coordinates:{
             latitude:"6.892521",
             longitude:"3.720413"
@@ -283,7 +283,7 @@ export const offices=[
 export const departments=[
     {
         name:"BBS",
-        image:"",
+        image:"images/bbs.png",
         coordinates:{
             latitude:"6.89072291334421",
             longitude:"3.7240046288794098"
@@ -311,7 +311,7 @@ export const departments=[
 
     {
         name:"engineering sch",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 14.00.52.jpeg",
         coordinates:{
             latitude:"6.8895027",
             longitude:"3.7240833"
@@ -347,7 +347,7 @@ export const departments=[
 
     {
         name:"bucodel",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 14.01.43.jpeg",
         coordinates:{
             latitude:"6.8917534",
             longitude:"3.7231606"
@@ -363,7 +363,7 @@ export const buth=[
 
     {
         name:"A&E",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 14.33.37.jpeg",
         coordinates:{
             latitude:"6.8918676",
             longitude:"3.7185995"
@@ -372,7 +372,7 @@ export const buth=[
 
     {
         name:"lab test",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 14.33.38 (1).jpeg",
         coordinates:{
             latitude:"6.891351",
             longitude:"3.718248"
@@ -381,7 +381,7 @@ export const buth=[
 
     {
         name:"cardiac center",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 14.33.38.jpeg",
         coordinates:{
             latitude:"6.8919768",
             longitude:"3.7185375"
@@ -424,7 +424,7 @@ export const others=[
 
     {
         name:"main gate",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 14.01.30.jpeg",
         coordinates:{
             latitude:"6.8888872",
             longitude:"3.7197522"
@@ -444,7 +444,7 @@ export const others=[
 
     {
         name:"superstore",
-        image:"",
+        image:"images/babrite.jpg",
         coordinates:{
             latitude:"6.891164099421291",
             longitude:"3.720359600755251"
@@ -473,7 +473,7 @@ export const others=[
 
     {
         name:"university library",
-        image:"",
+        image:"images/library.webp",
         coordinates:{
             latitude:"6.892345727597431",
             longitude:"3.7222057678081777"
@@ -482,7 +482,7 @@ export const others=[
 
     {
         name:"DHL",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 14.38.30.jpeg",
         coordinates:{
             latitude:"6.8891052",
             longitude:"3.7209437"
@@ -491,7 +491,7 @@ export const others=[
 
     {
         name:"BGH / guest house",
-        image:"",
+        image:"images/bgh.jpg",
         coordinates:{
             latitude:"6.890525437582436",
             longitude:"3.7201008562709257"
@@ -500,7 +500,7 @@ export const others=[
 
     {
         name:"stadium",
-        image:"",
+        image:"images/stadium.jpg",
         coordinates:{
             latitude:"6.895073312996593",
             longitude:"3.728043877820931"
@@ -527,7 +527,7 @@ export const others=[
 
     {
         name:"cafeteria",
-        image:"",
+        image:"images/caf.jpg",
         coordinates:{
             latitude:"6.89278985544793",
             longitude:"3.7237406440420293"
@@ -536,7 +536,7 @@ export const others=[
 
     {
         name:"SAT bookshop",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 14.01.31.jpeg",
         coordinates:{
             latitude:"6.8888173",
             longitude:"3.7224635"
@@ -554,7 +554,7 @@ export const others=[
 
     {
         name:"youth chapel",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 14.38.31.jpeg",
         coordinates:{
             latitude:"6.8898382",
             longitude:"3.7194048"
