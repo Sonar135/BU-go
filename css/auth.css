@@ -1,5 +1,11 @@
 
-
+:root{
+    --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --accent: #3351ad;
+    --accent_tran: #1313139b;
+    --accent_hover:#4b03a3;
+    --accent_disabled:#3351ad56;
+}
 
 .header{
     background: transparent;
@@ -58,20 +64,20 @@ h3{
     color: white;;
 }
 
-.form_cont input{
-    margin:50px auto;
-    width:400px;
-    height:40px;
+.form_cont input, .form_cont input:-webkit-autofill:focus, input:-webkit-autofill   {
+    margin:50px auto !important;
+    width:400px !important;
+    height:40px !important;
     /* border-radius:24px; */
-    border:none;
-    outline:none;
-    border-bottom:2px solid white;
-    padding:16px 0;
-    font-size:16px;
-    font-weight:400;
+    border:none !important;
+    outline:none !important;
+    border-bottom:2px solid white !important;
+    padding:16px 0 !important;
+    font-size:16px !important;
+    font-weight:400 !important;
     display:none;
-    background: transparent;
-    color:white;
+    background: transparent !important;
+    color:white !important;
 }
 
 
@@ -117,7 +123,7 @@ button{
     background: var(--accent);
     margin:0 auto;
     border-radius: 24px;
-    box-shadow: var(--shadow);
+    /* box-shadow: var(--shadow); */
     border:none;
     cursor:pointer;
     transition:.6s;
@@ -153,11 +159,9 @@ button:disabled{
 
 
 
-
-
 .message{
     position:fixed;
-    background: var(--accent_reso);
+    background: var(--accent);
     color:white;
     height:40px;
     width:20%;

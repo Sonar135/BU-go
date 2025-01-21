@@ -51,7 +51,11 @@
     -webkit-background-clip: text;
     text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
+    animation: flow_in .6s ease-in-out;
 }
+
+
+
 
 .mid_cont{
     width:1200px;

@@ -7,7 +7,7 @@ login_form.addEventListener("submit", (e)=>{
 
     const form_data=new FormData(login_form);
 
-    fetch("login.php", {
+    fetch("backend/login.php", {
         method:'POST',
         body: form_data
     })
@@ -19,18 +19,11 @@ login_form.addEventListener("submit", (e)=>{
         }
 
 
-        else if(data.status==="unnasigned"){
-            message.textContent="no store assigned yet";
-
-            message.style.display="flex";
-            setTimeout(() => {
-                message.style.display='none';
-                }, 7000);
-        }
+ 
 
         else{
           
-            message.textContent="manager does not exist";
+            message.textContent="user does not exist";
 
             message.style.display="flex";
             setTimeout(() => {

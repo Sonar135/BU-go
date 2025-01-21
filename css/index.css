@@ -65,7 +65,8 @@
 .buttons{
     width:270px;
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     margin:20px auto;
 }
 
@@ -80,6 +81,7 @@
     color:white;
     font-weight:600;
     transition:.5s;
+    margin:0 20px;
 }
 
 .button:hover{

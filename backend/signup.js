@@ -42,7 +42,7 @@ form.addEventListener("submit", (e)=>{
 
     const form_data=new FormData(form);
 
-    fetch("signup.php", {
+    fetch("backend/signup.php", {
         method: 'POST',
         body: form_data
     })
@@ -76,7 +76,7 @@ form.addEventListener("submit", (e)=>{
 
             
                 form_fields[1].value="";
-                form_fields[3].value="";
+                form_fields[2].value="";
                 submit.disabled =true;
         
             setTimeout(() => {
@@ -89,8 +89,8 @@ form.addEventListener("submit", (e)=>{
             message.textContent="password too weak"
 
             
+                form_fields[2].value="";
                 form_fields[3].value="";
-                form_fields[4].value="";
                 submit.disabled =true;
 
         

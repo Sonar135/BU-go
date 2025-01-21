@@ -619,7 +619,7 @@ function initMap() {
     // Coordinates for Babcock University
     const babcockUniversity = { lat: 6.893956, lng: 3.718715 };
     
-    const mockLocation = { lat:6.892839277599381, lng:3.7238590597861876 }; 
+    // const mockLocation = { lat:6.892839277599381, lng:3.7238590597861876 }; 
   
     // Define a bounding box around Babcock University
     const bounds = {
@@ -633,50 +633,53 @@ function initMap() {
     // Map options
     const mapOptions = {
         
-      zoom: 19, // Suitable zoom level for the campus
-      center: mockLocation, // Center the map on Babcock University
+      zoom: 19, 
+      // center: mockLocation, 
       restriction: {
-        latLngBounds: bounds, // Restrict map to the bounding box
-        strictBounds: false   // Allow some panning outside bounds before snapping back
+        latLngBounds: bounds, 
+        strictBounds: false   
       },
-    zoomControl: false,         // Disable zoom controls
-    mapTypeControl: false,      // Disable map type (satellite/terrain) controls
-    streetViewControl: false,   // Disable Street View controls
+    zoomControl: false,      
+    mapTypeControl: false,      
+    streetViewControl: false,  
     fullscreenControl: false,
     disableDefaultUI: true,
     gestureHandling: "greedy" ,
     };
 
+    let userLocation
 
   
     // Create the map
     const map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
-
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+           userLocation = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude
+          };
+  
+          // Center map on user's location
+          map.setCenter(userLocation);
+  
+          // Add a marker at user's location
+          new google.maps.Marker({
+            position: userLocation,
+            map: map,
+            title: 'Your Location'
+          });
+        },
+        (error) => {
+          console.error('Error fetching location:', error);
+        }
+      );
+    } 
 
     map.setOptions({ scrollwheel: false });
   
-    // Add a marker for Babcock University
-    new google.maps.Marker({
-      position: mockLocation,
-      map: map,
-      title: 'my location'
-    });
 
-
-    // setTimeout(()=>{
-
-    //   buildings.forEach(building=>{
-    //     new google.maps.Marker({
-    //       position: { lat: parseFloat(building.coordinates.latitude) ,  lng: parseFloat( building.coordinates.longitude) },
-    //       map: map,
-    //       icon: {
-    //         url: building.image,  // Path to your custom image
-    //         scaledSize: new google.maps.Size(30, 30)  // Resize the image (optional)
-    //       }
-    //     });
-    //   })
-    // }, 8000)
 
  
 
@@ -731,7 +734,7 @@ function initMap() {
 
 
   document.querySelector("#show_location").addEventListener('click', () => {
-    map.panTo(mockLocation); // Pan to the mock location
+    map.panTo(userLocation); // Pan to the mock location
     // map.setZoom(16); // Optionally set a fixed zoom level
   });
 
@@ -827,7 +830,7 @@ function initMap() {
       document.querySelector(".loading").classList.add("show")
       directionsService.route(
         {
-          origin: mockLocation,
+          origin: userLocation,
           destination: destination,
           travelMode: google.maps.TravelMode.WALKING,
           provideRouteAlternatives: true 
@@ -880,14 +883,14 @@ function initMap() {
 
 
 
-  navigator.geolocation.getCurrentPosition((position) => {
-    const userLocation = {
-      lat: position.coords.latitude,
-      lng: position.coords.longitude
-    };
+  // navigator.geolocation.getCurrentPosition((position) => {
+  //   const userLocation = {
+  //     lat: position.coords.latitude,
+  //     lng: position.coords.longitude
+  //   };
   
 
-  });
+  // });
   
 
 

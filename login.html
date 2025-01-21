@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/auth.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BU-GO</title>
 </head>
 <body>
     <div class="message" id="message">
@@ -42,12 +42,15 @@
 
     <div class="hero">
         <div class="overlay">
-            <div class="container form_cont" 
+            <div class="container form_cont" >
          
-                <form id="login_form"></form>><div class="cent" style="margin-top:100px"></div>>
-                     <h1 class="field">Login</h1>        
+                <form id="login_form" autocomplete="off"><div class="cent" style="margin-top:100px"></div>
+                     <h1 class="field">Login</h1>      
+                     
+                     <input type="text" name="dummy-email" style="display: none;">
+                     <input type="password" name="dummy-password" style="display: none;">  
                      <input type="email" placeholder="email" id="data" class="field" name="email">
-                     <input type="password" placeholder="password" id="data" class="field" name="password">
+                     <input type="password" placeholder="password" id="data" class="field" name="password" autocomplete="off"> 
     
      
                      <button disabled="disabled" id="sale_submit" class="field">Submit</button>
