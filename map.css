@@ -294,12 +294,18 @@
 
 
 .cus_buttons button:hover{
-  background: var(--accent);
+  width:60px;
+  height:60px;
+  border-radius:60px;
   transition: .3s ease;
 }
 
+button.selected i{
+  color: rgb(115, 218, 247);
+}
+
 .selected{
-  border:4px solid var(--accent_hover);
+  border:3px solid rgb(115, 218, 247);
 }
 
 .vibe_rise{

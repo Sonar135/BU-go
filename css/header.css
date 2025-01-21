@@ -45,7 +45,12 @@
 }
 
 .logo_cont a{
-    color:white;
+    color: #7319fa;
+    background-image: -webkit-linear-gradient(45deg,  #3351ad, #7494f1, #748dd7, white, white, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 .mid_cont{

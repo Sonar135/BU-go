@@ -1,395 +1,113 @@
 const buildings=[
   {
-      name:"Ameyo",
-      image:"",
-      coordinates:{
-          latitude:"6.895030345896131",
-          longitude:"3.7250587786492497"
-      },
-  },
-
-
-
-  {
-    name:"Accident and emergency",
-    image:"",
+    name:"Ameyo",
+    image:"images/2022-11-15.jpg",
     coordinates:{
-        latitude:"6.8918676",
-        longitude:"3.7185995"
+        latitude:"6.895030345896131",
+        longitude:"3.7250587786492497"
     },
 },
 
 {
-    name:"lab test",
-    image:"",
+    name:'Queen Esther',
+    image:"images/2018-07-31.jpg",
     coordinates:{
-        latitude:"6.891351",
-        longitude:"3.718248"
-    },
-},
-
-{
-    name:"cardiac center",
-    image:"",
-    coordinates:{
-        latitude:"6.8919768",
-        longitude:"3.7185375"
+        latitude:"6.893354076307076",
+        longitude:"3.7242952884990785"
     },
 },
 
 
 {
-  name:"amphitheatre",
-  image:"",
-  coordinates:{
-      latitude:"6.890859461094672",
-      longitude:"3.7225472078025525"
-  },
-},
-
-
-{
-  name:"main gate",
-  image:"",
-  coordinates:{
-      latitude:"6.8888872",
-      longitude:"3.7197522"
-  },
-},
-
-
-{
-  name:"basketball court",
-  image:"",
-  coordinates:{
-       latitude:"6.8939960750281815",
-       longitude:"3.7284691330356745"
-  },
-},
-
-
-{
-  name:"superstore",
-  image:"",
-  coordinates:{
-      latitude:"6.891164099421291",
-      longitude:"3.720359600755251"
-  },
-},
-
-
-{
-  name:"jumia hub",
-  image:"",
-  coordinates:{
-      latitude:"6.891259240532254",
-      longitude:"3.7208967137517277"
-  },
-},
-
-
-{
-  name:"banking area",
-  image:"",
-  coordinates:{
-      latitude:"6.890894160905001",
-      longitude:"3.7204693632964685"
-  },
-},
-
-{
-  name:"university library",
-  image:"",
-  coordinates:{
-      latitude:"6.892345727597431",
-      longitude:"3.7222057678081777"
-  },
-},
-
-{
-  name:"DHL",
-  image:"",
-  coordinates:{
-      latitude:"6.8891052",
-      longitude:"3.7209437"
-  },
-},
-
-{
-  name:"BGH / guest house",
-  image:"",
-  coordinates:{
-      latitude:"6.890525437582436",
-      longitude:"3.7201008562709257"
-  },
-},
-
-{
-  name:"stadium",
-  image:"",
-  coordinates:{
-       latitude:"6.894978114199844",
-       longitude:"3.727161356692398"
-  },
-},
-
-{
-  name:"MSQ gate",
-  image:"",
-  coordinates:{
-      latitude:"6.8957360",
-      longitude:"3.7239401"
-  },
-},
-
-{
-  name:"andrews car park",
-  image:"",
-  coordinates:{
-      latitude:"6.8892871041690915",
-      longitude:"3.7208637665726645"
-  },
-},
-
-{
-  name:"cafeteria",
-  image:"",
-  coordinates:{
-      latitude:"6.89278985544793",
-      longitude:"3.7237406440420293"
-  },
-},
-
-{
-  name:"SAT bookshop",
-  image:"",
-  coordinates:{
-      latitude:"6.8888173",
-      longitude:"3.7224635"
-  },
-},
-
-{
-  name:"pioneer chapel",
-  image:"",
-  coordinates:{
-      latitude:"6.889791275931557",
-      longitude:"3.719890517431272"
-  },
-},
-
-{
-  name:"youth chapel",
-  image:"",
-  coordinates:{
-      latitude:"6.8898382",
-      longitude:"3.7194048"
-  },
-},
-
-
-{
-    name:"outpatient clinic",
-    image:"",
+    name:"FAD",
+    image:"images/fad.jpg",
     coordinates:{
-        latitude:"6.892253",
-        longitude:"3.718209"
+        latitude:"6.8938551248289395",
+        longitude:"3.724757133980804"
+    },
+},
+
+{
+    name:"Crystal",
+    image:"images/WhatsApp Image 2025-01-20 at 19.31.39.jpeg",
+    coordinates:{
+        latitude:"6.892606765688201",
+        longitude:"3.728013768174291"
     },
 },
 
 
 {
-    name:"student clinic",
-    image:"",
+    name:"Platinum",
+    image:"images/2017-06-04.jpg",
     coordinates:{
-       latitude:"6.890859461094672",
-        longitude:"3.7225472078025525"
-    },
-},
-
-
-
-  {
-    name:"security office",
-    image:"",
-    coordinates:{
-       latitude:"6.890859461094672",
-       longitude:"3.7225472078025525"
-    },
-},
-
-  {
-    name:"BBS",
-    image:"",
-    coordinates:{
-        latitude:"6.89072291334421",
-        longitude:"3.7240046288794098"
+        latitude:"6.891898667331963",
+        longitude:"3.7274856946267096"
     },
 },
 
 
 {
-    name:"SAT",
-    image:"",
+    name:"Ogden",
+    image:"images/WhatsApp Image 2025-01-20 at 19.30.39.jpeg",
     coordinates:{
-        latitude:"6.888844522542642",
-        longitude:"3.7229143071147894"
+        latitude:"6.893204798859399",
+        longitude:"3.7267069301270497"
     },
 },
+
 
 {
-    name:"chemistry lab",
-    image:"",
+    name:"Havilah Gold",
+    image:"images/havilah.jpg",
     coordinates:{
-        latitude:"6.888053100437225",
-        longitude:"3.72295837214855"
+        latitude:"6.894934536100923",
+        longitude:" 3.7260806996710825"
     },
 },
+
 
 {
-    name:"engineering sch",
-    image:"",
-    coordinates:{
-        latitude:"6.8895027",
-        longitude:"3.7240833"
-    },
-},
-
-{
-    name:"EAH",
-    image:"",
-    coordinates:{
-        latitude:"6.890244297687223",
-        longitude:"3.7207006961518774"
-    },
-},
-
-{
-    name:"new horizon",
-    image:"",
-    coordinates:{
-        latitude:"6.890481261704027",
-        longitude:"3.723260912472078"
-    },
-},
-
-{
-    name:"600 seaters",
-    image:"",
-    coordinates:{
-        latitude:"6.89143472387291",
-        longitude:"3.7168539244662586"
-    },
-},
-
-{
-    name:"bucodel",
-    image:"",
-    coordinates:{
-        latitude:"6.8917534",
-        longitude:"3.7231606"
-    },
-},
-
-  {
-      name:'Queen Esther',
-      image:"",
-      coordinates:{
-          latitude:"6.893354076307076",
-          longitude:"3.7242952884990785"
-      },
-  },
-
-
-  {
-      name:"FAD",
-      image:"",
-      coordinates:{
-          latitude:"6.8938551248289395",
-          longitude:"3.724757133980804"
-      },
-  },
-
-  {
-      name:"Crystal",
-      image:"",
-      coordinates:{
-          latitude:"6.892606765688201",
-          longitude:"3.728013768174291"
-      },
-  },
-
-
-  {
-      name:"Platinum",
-      image:"",
-      coordinates:{
-          latitude:"6.891898667331963",
-          longitude:"3.7274856946267096"
-      },
-  },
-
-
-  {
-      name:"Ogden",
-      image:"",
-      coordinates:{
-          latitude:"6.893204798859399",
-          longitude:"3.7267069301270497"
-      },
-  },
-
-
-  {
-      name:"Havilah Gold",
-      image:"",
-      coordinates:{
-          latitude:"6.894934536100923",
-          longitude:" 3.7260806996710825"
-      },
-  },
-
-
-  {
-    name:"Sapphire",
-    image:"",
-    coordinates:{
-        latitude:"6.8914392",
-        longitude:"3.7263655"
-    },
-},
-
-{
-  name:"White",
-  image:"",
+  name:"Sapphire",
+  image:"images/WhatsApp Image 2025-01-20 at 13.31.27.jpeg",
   coordinates:{
-      latitude:"6.893796419854033",
-      longitude:"3.726307960727902"
-  },
-},
-
-
-{
-  name:"Diamond",
-  image:"",
-  coordinates:{
-      latitude:"6.89154295890297",
-      longitude:"3.7274378052376718"
+      latitude:"6.8914392",
+      longitude:"3.7263655"
   },
 },
 
 {
-  name:"Nyberg",
-  image:"",
-  coordinates:{
-      latitude:"6.892612513800621",
-      longitude:"3.7254955154433476"
-  },
+name:"White",
+image:"images/2018-11-23.jpg",
+coordinates:{
+    latitude:"6.893796419854033",
+    longitude:"3.726307960727902"
 },
+},
+
+
+{
+name:"Diamond",
+image:"images/WhatsApp Image 2025-01-20 at 19.31.40.jpeg",
+coordinates:{
+    latitude:"6.89154295890297",
+    longitude:"3.7274378052376718"
+},
+},
+
+{
+name:"Nyberg",
+image:"images/nyberg.jpg",
+coordinates:{
+    latitude:"6.892612513800621",
+    longitude:"3.7254955154433476"
+},
+},
+
 
 {
   name:"Samuel Akande",
-  image:"",
+  image:"images/2018-07-08.jpg",
   coordinates:{
       latitude:"6.894150538061167",
       longitude:"3.7235165322496346"
@@ -399,7 +117,7 @@ const buildings=[
 
 {
   name:"Neal wilson",
-  image:"",
+  image:"images/wilson.jpg",
   coordinates:{
       latitude:"6.893551542017954",
       longitude:"3.7213153832225165"
@@ -408,7 +126,7 @@ const buildings=[
 
 {
   name:"winslow",
-  image:"",
+  image:"images/2021-07-03.jpg",
   coordinates:{
       latitude:"6.893929261765801",
       longitude:"3.72175869916458"
@@ -417,7 +135,7 @@ const buildings=[
 
 {
   name:"emerald",
-  image:"",
+  image:"images/WhatsApp Image 2025-01-20 at 13.29.00.jpeg",
   coordinates:{
       latitude:"6.8936647",
       longitude:"3.7198149"
@@ -426,7 +144,7 @@ const buildings=[
 
 {
   name:"gideon",
-  image:"",
+  image:"images/gideon.jpg",
   coordinates:{
       latitude:"6.894552441711924",
       longitude:"3.722331661846355"
@@ -435,7 +153,7 @@ const buildings=[
 
 {
   name:"bethel",
-  image:"",
+  image:"images/bethel.jpg",
   coordinates:{
       latitude:"6.894524972387451",
       longitude:"3.7231185567621097"
@@ -445,7 +163,7 @@ const buildings=[
 
 {
   name:"welch",
-  image:"",
+  image:"images/welch.jpg",
   coordinates:{
       latitude:"6.8913045443968",
       longitude:"3.7217132667544566"
@@ -455,7 +173,7 @@ const buildings=[
 
 {
   name:"nelson mandela",
-  image:"",
+  image:"images/mandela.jpg",
   coordinates:{
       latitude:"6.893605386498164",
       longitude:"3.72306544464822"
@@ -464,7 +182,7 @@ const buildings=[
 
 {
   name:"topaz",
-  image:"",
+  image:"images/WhatsApp Image 2025-01-20 at 19.38.02.jpeg",
   coordinates:{
       latitude:"6.893767817468163",
       longitude:"3.720621690740852"
@@ -474,16 +192,17 @@ const buildings=[
 
 {
   name:"adeleke",
-  image:"",
+  image:"images/adeleke.jpg",
   coordinates:{
       latitude:"6.8927832362599",
       longitude:"3.7210867566787056"
   },
 },
 
+
 {
   name:"busary",
-  image:"",
+  image:"images/WhatsApp Image 2025-01-20 at 19.44.06.jpeg",
   coordinates:{
       latitude:"6.890125898004287",
       longitude:"3.7229927134898433"
@@ -493,7 +212,7 @@ const buildings=[
 
 {
   name:"entrepreneurship",
-  image:"",
+  image:"images/WhatsApp Image 2025-01-20 at 14.00.51.jpeg",
   coordinates:{
       latitude:"6.8891578",
       longitude:"3.7263045"
@@ -503,7 +222,7 @@ const buildings=[
 
 {
   name:"farm house",
-  image:"",
+  image:"images/WhatsApp Image 2025-01-20 at 14.41.51.jpeg",
   coordinates:{
       latitude:"6.8902486",
       longitude:"3.7259833"
@@ -523,7 +242,7 @@ const buildings=[
 
 {
   name:"registry",
-  image:"",
+  image:"images/WhatsApp Image 2025-01-20 at 19.41.47.jpeg",
   coordinates:{
       latitude:"6.889482832565852",
       longitude:"3.7223997255545282"
@@ -532,12 +251,313 @@ const buildings=[
 
 {
   name:"alumi building",
-  image:"",
+  image:"images/WhatsApp Image 2025-01-20 at 19.37.15.jpeg",
   coordinates:{
       latitude:"6.892664413865216",
       longitude:"3.7205273643296155"
   },
 },
+
+
+{
+  name:"security office",
+  image:"",
+  coordinates:{
+     latitude:"6.890859461094672",
+     longitude:"3.7225472078025525"
+  },
+},
+
+{
+  name:"nursing science",
+  image:"images/WhatsApp Image 2025-01-20 at 19.34.14.jpeg",
+  coordinates:{
+      latitude:"6.8912225",
+      longitude:"3.7227904"
+  },
+},
+
+{
+  name:"BBS",
+  image:"images/bbs.png",
+  coordinates:{
+      latitude:"6.89072291334421",
+      longitude:"3.7240046288794098"
+  },
+},
+
+
+{
+  name:"SAT",
+  image:"images/WhatsApp Image 2025-01-20 at 19.43.29.jpeg",
+  coordinates:{
+      latitude:"6.888844522542642",
+      longitude:"3.7229143071147894"
+  },
+},
+
+{
+  name:"chemistry lab",
+  image:"",
+  coordinates:{
+      latitude:"6.888053100437225",
+      longitude:"3.72295837214855"
+  },
+},
+
+{
+  name:"engineering sch",
+  image:"images/WhatsApp Image 2025-01-20 at 14.00.52.jpeg",
+  coordinates:{
+      latitude:"6.8895027",
+      longitude:"3.7240833"
+  },
+},
+
+{
+  name:"EAH",
+  image:"images/WhatsApp Image 2025-01-20 at 19.36.43.jpeg",
+  coordinates:{
+      latitude:"6.890244297687223",
+      longitude:"3.7207006961518774"
+  },
+},
+
+{
+  name:"new horizon",
+  image:"images/WhatsApp Image 2025-01-20 at 19.44.08.jpeg",
+  coordinates:{
+      latitude:"6.890481261704027",
+      longitude:"3.723260912472078"
+  },
+},
+
+{
+  name:"600 seaters",
+  image:"",
+  coordinates:{
+      latitude:"6.89143472387291",
+      longitude:"3.7168539244662586"
+  },
+},
+
+{
+  name:"bucodel",
+  image:"images/WhatsApp Image 2025-01-20 at 14.01.43.jpeg",
+  coordinates:{
+      latitude:"6.8917534",
+      longitude:"3.7231606"
+  },
+},
+
+
+{
+  name:"A&E",
+  image:"images/WhatsApp Image 2025-01-20 at 14.33.37.jpeg",
+  coordinates:{
+      latitude:"6.8918676",
+      longitude:"3.7185995"
+  },
+},
+
+{
+  name:"lab test",
+  image:"images/WhatsApp Image 2025-01-20 at 14.33.38 (1).jpeg",
+  coordinates:{
+      latitude:"6.891351",
+      longitude:"3.718248"
+  },
+},
+
+{
+  name:"cardiac center",
+  image:"images/WhatsApp Image 2025-01-20 at 14.33.38.jpeg",
+  coordinates:{
+      latitude:"6.8919768",
+      longitude:"3.7185375"
+  },
+},
+
+{
+  name:"outpatient clinic",
+  image:"",
+  coordinates:{
+      latitude:"6.892253",
+      longitude:"3.718209"
+  },
+},
+
+
+{
+  name:"student clinic",
+  image:"images/WhatsApp Image 2025-01-20 at 19.35.04.jpeg",
+  coordinates:{
+     latitude:"6.890859461094672",
+      longitude:"3.7225472078025525"
+  },
+},
+
+{
+  name:"amphitheatre",
+  image:"images/WhatsApp Image 2025-01-20 at 19.34.47.jpeg",
+  coordinates:{
+      latitude:"6.890859461094672",
+      longitude:"3.7225472078025525"
+  },
+},
+
+
+{
+  name:"busa",
+  image:"images/WhatsApp Image 2025-01-20 at 19.33.28.jpeg",
+  coordinates:{
+      latitude:"6.8920889",
+      longitude:"3.7238201"
+  },
+},
+
+
+{
+  name:"main gate",
+  image:"images/WhatsApp Image 2025-01-20 at 14.01.30.jpeg",
+  coordinates:{
+      latitude:"6.8888872",
+      longitude:"3.7197522"
+  },
+},
+
+
+{
+  name:"basketball court",
+  image:"",
+  coordinates:{
+      latitude:"6.8939960750281815",
+      longitude:"3.7284691330356745"
+  },
+},
+
+
+{
+  name:"superstore",
+  image:"images/babrite.jpg",
+  coordinates:{
+      latitude:"6.891164099421291",
+      longitude:"3.720359600755251"
+  },
+},
+
+
+{
+  name:"jumia hub",
+  image:"",
+  coordinates:{
+      latitude:"6.891259240532254",
+      longitude:"3.7208967137517277"
+  },
+},
+
+
+{
+  name:"banking area",
+  image:"images/WhatsApp Image 2025-01-20 at 19.36.03.jpeg",
+  coordinates:{
+      latitude:"6.890894160905001",
+      longitude:"3.7204693632964685"
+  },
+},
+
+{
+  name:"university library",
+  image:"images/library.webp",
+  coordinates:{
+      latitude:"6.892345727597431",
+      longitude:"3.7222057678081777"
+  },
+},
+
+{
+  name:"DHL",
+  image:"images/WhatsApp Image 2025-01-20 at 14.38.30.jpeg",
+  coordinates:{
+      latitude:"6.8891052",
+      longitude:"3.7209437"
+  },
+},
+
+{
+  name:"BGH / guest house",
+  image:"images/bgh.jpg",
+  coordinates:{
+      latitude:"6.890525437582436",
+      longitude:"3.7201008562709257"
+  },
+},
+
+{
+  name:"stadium",
+  image:"images/stadium.jpg",
+  coordinates:{
+      latitude:"6.894978114199844",
+      longitude:"3.727161356692398"
+  },
+},
+
+{
+  name:"MSQ gate",
+  image:"",
+  coordinates:{
+      latitude:"6.8957360",
+      longitude:"3.7239401"
+  },
+},
+
+{
+  name:"andrews car park",
+  image:"images/WhatsApp Image 2025-01-20 at 19.41.44.jpeg",
+  coordinates:{
+      latitude:"6.8892871041690915",
+      longitude:"3.7208637665726645"
+  },
+},
+
+{
+  name:"cafeteria",
+  image:"images/caf.jpg",
+  coordinates:{
+      latitude:"6.89278985544793",
+      longitude:"3.7237406440420293"
+  },
+},
+
+{
+  name:"SAT bookshop",
+  image:"images/WhatsApp Image 2025-01-20 at 14.01.31.jpeg",
+  coordinates:{
+      latitude:"6.8888173",
+      longitude:"3.7224635"
+  },
+},
+
+{
+  name:"pioneer chapel",
+  image:"images/WhatsApp Image 2025-01-20 at 19.41.46.jpeg",
+  coordinates:{
+      latitude:"6.889791275931557",
+      longitude:"3.719890517431272"
+  },
+},
+
+{
+  name:"youth chapel",
+  image:"images/WhatsApp Image 2025-01-20 at 14.38.31.jpeg",
+  coordinates:{
+      latitude:"6.8898382",
+      longitude:"3.7194048"
+  },
+},
+
+
+
 
 ]
 
@@ -642,6 +662,24 @@ function initMap() {
       map: map,
       title: 'my location'
     });
+
+
+    // setTimeout(()=>{
+
+    //   buildings.forEach(building=>{
+    //     new google.maps.Marker({
+    //       position: { lat: parseFloat(building.coordinates.latitude) ,  lng: parseFloat( building.coordinates.longitude) },
+    //       map: map,
+    //       icon: {
+    //         url: building.image,  // Path to your custom image
+    //         scaledSize: new google.maps.Size(30, 30)  // Resize the image (optional)
+    //       }
+    //     });
+    //   })
+    // }, 8000)
+
+ 
+
 
 
     const directionsService = new google.maps.DirectionsService();

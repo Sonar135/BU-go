@@ -29,7 +29,7 @@ export const buildings=[
   
     {
         name:"Crystal",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 19.31.39.jpeg",
         coordinates:{
             latitude:"6.892606765688201",
             longitude:"3.728013768174291"
@@ -49,7 +49,7 @@ export const buildings=[
   
     {
         name:"Ogden",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 19.30.39.jpeg",
         coordinates:{
             latitude:"6.893204798859399",
             longitude:"3.7267069301270497"
@@ -88,7 +88,7 @@ export const buildings=[
   
   {
     name:"Diamond",
-    image:"",
+    image:"images/WhatsApp Image 2025-01-20 at 19.31.40.jpeg",
     coordinates:{
         latitude:"6.89154295890297",
         longitude:"3.7274378052376718"
@@ -187,7 +187,7 @@ export const male_halls=[
 
     {
         name:"topaz",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 19.38.02.jpeg",
         coordinates:{
             latitude:"6.893767817468163",
             longitude:"3.720621690740852"
@@ -211,7 +211,7 @@ export const male_halls=[
 export const offices=[
     {
         name:"busary",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 19.44.06.jpeg",
         coordinates:{
             latitude:"6.890125898004287",
             longitude:"3.7229927134898433"
@@ -251,7 +251,7 @@ export const offices=[
 
     {
         name:"registry",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 19.41.47.jpeg",
         coordinates:{
             latitude:"6.889482832565852",
             longitude:"3.7223997255545282"
@@ -260,7 +260,7 @@ export const offices=[
 
     {
         name:"alumi building",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 19.37.15.jpeg",
         coordinates:{
             latitude:"6.892664413865216",
             longitude:"3.7205273643296155"
@@ -281,6 +281,17 @@ export const offices=[
 
 
 export const departments=[
+
+
+    {
+        name:"nursing science",
+        image:"images/WhatsApp Image 2025-01-20 at 19.34.14.jpeg",
+        coordinates:{
+            latitude:"6.8912225",
+            longitude:"3.7227904"
+        },
+    },
+
     {
         name:"BBS",
         image:"images/bbs.png",
@@ -293,7 +304,7 @@ export const departments=[
 
     {
         name:"SAT",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 19.43.29.jpeg",
         coordinates:{
             latitude:"6.888844522542642",
             longitude:"3.7229143071147894"
@@ -320,7 +331,7 @@ export const departments=[
 
     {
         name:"EAH",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 19.36.43.jpeg",
         coordinates:{
             latitude:"6.890244297687223",
             longitude:"3.7207006961518774"
@@ -329,7 +340,7 @@ export const departments=[
 
     {
         name:"new horizon",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 19.44.08.jpeg",
         coordinates:{
             latitude:"6.890481261704027",
             longitude:"3.723260912472078"
@@ -400,7 +411,7 @@ export const buth=[
 
     {
         name:"student clinic",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 19.35.04.jpeg",
         coordinates:{
            latitude:"6.890859461094672",
             longitude:"3.7225472078025525"
@@ -414,10 +425,20 @@ export const buth=[
 export const others=[
     {
         name:"amphitheatre",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 19.34.47.jpeg",
         coordinates:{
             latitude:"6.890859461094672",
             longitude:"3.7225472078025525"
+        },
+    },
+
+
+    {
+        name:"busa",
+        image:"images/WhatsApp Image 2025-01-20 at 19.33.28.jpeg",
+        coordinates:{
+            latitude:"6.8920889",
+            longitude:"3.7238201"
         },
     },
 
@@ -464,7 +485,7 @@ export const others=[
 
     {
         name:"banking area",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 19.36.03.jpeg",
         coordinates:{
             latitude:"6.890894160905001",
             longitude:"3.7204693632964685"
@@ -518,7 +539,7 @@ export const others=[
 
     {
         name:"andrews car park",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 19.41.44.jpeg",
         coordinates:{
             latitude:"6.8892871041690915",
             longitude:"3.7208637665726645"
@@ -545,7 +566,7 @@ export const others=[
 
     {
         name:"pioneer chapel",
-        image:"",
+        image:"images/WhatsApp Image 2025-01-20 at 19.41.46.jpeg",
         coordinates:{
             latitude:"6.889791275931557",
             longitude:"3.719890517431272"
